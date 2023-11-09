@@ -18,6 +18,8 @@ Download Vimium locally (have to load the extension manually when running Playwr
 ```
 ./setup.sh
 ```
+## New Features
+Voice Mode: Engage with the browser using voice commands. Simply say your objective, and watch vimGPT perform actions in real-time.
 
 ## Ideas
 Feel free to collaborate with me on this, I have a number of ideas:
@@ -29,6 +31,7 @@ Feel free to collaborate with me on this, I have a number of ideas:
 - Have the Vision API return general instructions, formalized by another call to the JSON mode version of the API. This is a workaround for the JSON mode issue but requires another LLM call, which is slower/more expensive.
 - Add speech-to-text with Whisper or another model to eliminate text input and make this more accessible.
 - Make this work for your own browser instead of spinning up an artificial one.
+- Consider packaging the application with tools like PyInstaller and adding a GUI for a better user experience.
 
 ## References
 - https://github.com/Globe-Engineer/globot
