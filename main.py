@@ -11,7 +11,18 @@ def main():
     print("Navigating to Google...")
     driver.navigate("https://www.google.com")
 
-    objective = input("Please enter your objective: ")
+    # Check if the user wants to use voice mode
+    voice_mode = input("Would you like to enable voice mode? (yes/no): ")
+    if voice_mode.lower() == 'yes':
+        # Initialize the whisper mic
+        mic = WhisperMic()
+        print("Voice mode enabled. Please speak your objective.")
+        # Use whisper_mic to get the objective via voice
+        objective = mic.listen()
+    else:
+        objective = input("Please enter your objective: ")
+    
+    # The rest of your main function...
     while True:
         time.sleep(1)
         print("Capturing the screen...")
